@@ -54,7 +54,7 @@
       <Project>{6fc9ad05-0b86-4a47-830c-861919f9accc}</Project>
       <Name>CoffeeCore</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DispenserCore\VendorCore.csproj">
+    <ProjectReference Include="..\VendorCore\VendorCore.csproj">
       <Project>{d52834c3-7c80-428f-974f-4b6f7a83e7ef}</Project>
       <Name>VendorCore</Name>
     </ProjectReference>

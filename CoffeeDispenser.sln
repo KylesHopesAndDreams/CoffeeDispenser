@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeDOS", "CoffeeDOS\Coff
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeCore", "Coffee\CoffeeCore.csproj", "{6FC9AD05-0B86-4A47-830C-861919F9ACCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendorCore", "DispenserCore\VendorCore.csproj", "{D52834C3-7C80-428F-974F-4B6F7A83E7EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendorCore", "VendorCore\VendorCore.csproj", "{D52834C3-7C80-428F-974F-4B6F7A83E7EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeDispenserUnitTests", "CoffeeUnitTests\CoffeeDispenserUnitTests.csproj", "{37850A36-407A-4F39-BF16-C671EC7917FD}"
 EndProject

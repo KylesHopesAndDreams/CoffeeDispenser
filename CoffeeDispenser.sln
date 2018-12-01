@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeDOS", "CoffeeDOS\CoffeeDOS.csproj", "{4463970E-8759-4421-B561-02F456525DC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeCore", "Coffee\CoffeeCore.csproj", "{6FC9AD05-0B86-4A47-830C-861919F9ACCC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeCore", "CoffeeCore\CoffeeCore.csproj", "{6FC9AD05-0B86-4A47-830C-861919F9ACCC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendorCore", "VendorCore\VendorCore.csproj", "{D52834C3-7C80-428F-974F-4B6F7A83E7EF}"
 EndProject

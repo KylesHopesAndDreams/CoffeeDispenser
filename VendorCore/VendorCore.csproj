@@ -47,7 +47,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Coffee\CoffeeCore.csproj">
+    <ProjectReference Include="..\CoffeeCore\CoffeeCore.csproj">
       <Project>{6fc9ad05-0b86-4a47-830c-861919f9accc}</Project>
       <Name>CoffeeCore</Name>
     </ProjectReference>

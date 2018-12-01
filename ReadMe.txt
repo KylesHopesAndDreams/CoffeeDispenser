@@ -1,3 +1,5 @@
+Created by Kyle Hanson, 2018
+
 A simple coffee dispenser, with a simple command line tool to navigate it's functionality.
 
 Total time taken to develop project: 3h45m

@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4463970E-8759-4421-B561-02F456525DC2}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>CoffeeDOS</RootNamespace>
-    <AssemblyName>CoffeeDOS</AssemblyName>
+    <ProjectGuid>{D52834C3-7C80-428F-974F-4B6F7A83E7EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DispenserCore</RootNamespace>
+    <AssemblyName>DispenserCore</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,20 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CoffeeDOS.cs" />
+    <Compile Include="AcceptedPayments.cs" />
+    <Compile Include="CoffeeVendor.cs" />
+    <Compile Include="ICoffeeVendor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Coffee\CoffeeCore.csproj">
       <Project>{6fc9ad05-0b86-4a47-830c-861919f9accc}</Project>
       <Name>CoffeeCore</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DispenserCore\VendorCore.csproj">
-      <Project>{d52834c3-7c80-428f-974f-4b6f7a83e7ef}</Project>
-      <Name>VendorCore</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

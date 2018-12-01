@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CoffeeCore;
 
-namespace CoreUnitTests
+namespace CoffeeCore.UnitTests
 {
     /// <summary>
     /// Tests the CoffeeCore assembly; Coffee and CoffeeSize are validated

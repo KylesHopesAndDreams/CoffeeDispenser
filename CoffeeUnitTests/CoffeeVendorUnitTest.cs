@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using VendorCore;
 using CoffeeCore;
 
-namespace CoreUnitTests
+namespace VendorCore.UnitTests
 {
     /// <summary>
     // Tests the VendorCore assembly; CoffeeVendor and AcceptablePayments are tested here

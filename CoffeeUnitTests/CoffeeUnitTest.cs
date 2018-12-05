@@ -10,7 +10,7 @@ namespace CoffeeCore.UnitTests
     public class CoffeeUnitTest
     {
         Coffee _smallCoffee, _mediumCoffee, _largeCoffee;
-        CoffeeSize _small, _medium, _large;
+        ICoffeeSize _small, _medium, _large;
 
         [TestInitialize]
         public void CreateCoffee()

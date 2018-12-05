@@ -3,7 +3,7 @@
     /// <summary>
     /// Implements Sugar as an addon to coffee.
     /// </summary>
-    public sealed class Sugar : Addon
+    public sealed class Sugar : IAddon
     {
         #region Data Members
         private ushort _quantity;
@@ -12,9 +12,9 @@
         #endregion
 
         #region Properties
-        public override ushort Quantity => _quantity;
-        public override ushort MaxQuantity => _maxQuantity;
-        public override decimal UnitCost => _unitCost;
+        public ushort Quantity => _quantity;
+        public ushort MaxQuantity => _maxQuantity;
+        public decimal UnitCost => _unitCost;
         #endregion
 
         public Sugar() : base()
@@ -25,19 +25,28 @@
         }
 
         /// <summary>
-        /// Implements <seealso cref="Addon.AddQuantity(ushort)"/>
+        /// Implements <seealso cref="IAddon.AddQuantity(ushort)"/>
         /// </summary>
-        public override void AddQuantity(ushort qtyIn = 1)
+        public void AddQuantity(ushort qtyIn = 1)
         {
             _quantity = (_maxQuantity > _quantity + qtyIn) ? (ushort)(_quantity + qtyIn) : _maxQuantity;
         }
 
         /// <summary>
-        /// Implements <seealso cref="Addon.RemoveQuantity(ushort)"/>
+        /// Implements <seealso cref="IAddon.RemoveQuantity(ushort)"/>
         /// </summary>
-        public override void RemoveQuantity(ushort qtyIn = 1)
+        public void RemoveQuantity(ushort qtyIn = 1)
         {
             _quantity = (_quantity - qtyIn >= 0) ? (ushort)(_quantity - qtyIn) : (ushort)0;
+        }
+
+        /// <summary>
+        /// Implements <seealso cref="IAddon.GetCost"/>
+        /// </summary>
+        /// <returns></returns>
+        public decimal GetCost()
+        {
+            return Quantity * UnitCost;
         }
 
     }

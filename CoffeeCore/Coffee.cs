@@ -6,13 +6,13 @@
     public class Coffee
     {
         #region Data Members
-        private CoffeeSize _size;
+        private ICoffeeSize _size;
         private Sugar _sugar;
         private Creamer _creamer;
         #endregion
 
         #region Properties
-        public CoffeeSize Size => _size;
+        public ICoffeeSize Size => _size;
         public Sugar AddedSugar => _sugar;
         public Creamer AddedCreamer => _creamer;
         #endregion
@@ -20,7 +20,7 @@
         /// <summary>
         /// Creates a cup of coffee, with the size preset.
         /// </summary>
-        public Coffee(CoffeeSize sizeIn)
+        public Coffee(ICoffeeSize sizeIn)
         {
             _size = sizeIn;
             _sugar = new Sugar();

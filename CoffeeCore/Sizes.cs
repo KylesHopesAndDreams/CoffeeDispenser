@@ -6,19 +6,19 @@
      * These values are set in the constructors. 
      * **/
 
-    public abstract class CoffeeSize
+    public interface ICoffeeSize
     {
-        public abstract string Description { get; }
-        public abstract decimal Cost { get; }
+        string Description { get; }
+        decimal Cost { get; }
     }
         
-    public sealed class SmallSize : CoffeeSize
+    public sealed class SmallSize : ICoffeeSize
     {
         private string _description;
         private decimal _cost;
 
-        public override string Description => _description;
-        public override decimal Cost => _cost;
+        public string Description => _description;
+        public decimal Cost => _cost;
 
         public SmallSize() : base()
         {
@@ -27,13 +27,13 @@
         }
     }
 
-    public sealed class MediumSize : CoffeeSize
+    public sealed class MediumSize : ICoffeeSize
     {
         private string _description;
         private decimal _cost;
 
-        public override string Description => _description;
-        public override decimal Cost => _cost;
+        public string Description => _description;
+        public decimal Cost => _cost;
 
         public MediumSize() : base()
         {
@@ -42,13 +42,13 @@
         }
     }
 
-    public sealed class LargeSize : CoffeeSize
+    public sealed class LargeSize : ICoffeeSize
     {
         private string _description;
         private decimal _cost;
 
-        public override string Description => _description;
-        public override decimal Cost => _cost;
+        public string Description => _description;
+        public decimal Cost => _cost;
 
         public LargeSize() : base()
         {

@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Addon.cs" />
+    <Compile Include="IAddon.cs" />
     <Compile Include="Coffee.cs" />
     <Compile Include="Creamer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -93,7 +93,7 @@ namespace CoffeeDispenser.FrontEnd
         }
         private static void RunSizeMenuToConsole()
         {
-            CoffeeSize size = null;
+            ICoffeeSize size = null;
             bool leaveSizeMenu = false;
 
             while (!leaveSizeMenu)
